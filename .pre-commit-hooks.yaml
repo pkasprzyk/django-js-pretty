@@ -1,0 +1,11 @@
+- id: django-js-pretty
+  name: django-js-pretty
+  description: "Run 'django-js-pretty' for Django-templates-aware JavaScript formatting"
+  entry: django-js-pretty
+  language: python
+  types_or: [html, javascript]
+  args: []
+  exclude: "(^node_modules/)|(.*.min.js$)"
+  require_serial: true
+  additional_dependencies: []
+  minimum_pre_commit_version: "2.9.2"

@@ -1,0 +1,22 @@
+[project]
+name = "django-js-pretty"
+version = "0.1.0"
+description = "A Django-templates-aware JavaScript formatter for use as a script or pre-commit hook."
+authors = [
+    { name = "pkasprzyk" }
+]
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "identify",
+    "jsbeautifier",
+]
+
+[tool.setuptools]
+py-modules = ["django_js_pretty"]
+
+[project.urls]
+Homepage = "https://github.com/pkasprzyk/django-js-pretty"
+
+[project.scripts]
+django-js-pretty = "django_js_pretty:main"
