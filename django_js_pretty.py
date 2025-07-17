@@ -50,6 +50,9 @@ def format_js_file(file_path):
         content = f.read()
 
     formatted = format_js(content)
+    if formatted:
+        # Ensure a non-empty file ends with a single newline
+        formatted = formatted.rstrip("\n") + "\n"
 
     with open(file_path, "w", encoding="utf-8") as f:
         f.write(formatted)
